@@ -266,3 +266,43 @@ The maximum number that can be used in a computer depends on the processor archi
 
 
 
+---
+
+
+
+### 32 Bit & 64 Bit Processor 
+
+The word 32 and 64 Bit refers to the architecture of the processor, 32 and 64 bit to distinguish the processor's ability to access memory through the CPU Register. At 32 bit the ability to access the memory address reaches 2^32.
+
+At 64 bits the ability to access memory addresses reaches 2^64.
+
+On a 32-bit processor the processing ability to interact with RAM is limited to 4 GB, while on a 64-bit processor the processing ability to interact with RAM can be more than 4GB.
+
+The 64-bit processor can process data more than a 32-bit processor. On a 64-bit processor, the value of computing is superior, including the memory address it has.
+
+In addition, a significant differentiating factor between 32-bit processors and 64-bit processors is the ability to calculate per second which affects the speed to complete a job.
+
+---
+
+
+
+### Signed Integer 
+
+In Signed Integer we can store negative integer values and positive integers. Signed Integer uses 1 bit to represent a sign (positive or negative).
+
+| **No** | **Types** | **Description**           | **Range**                                                    |
+| ------ | --------- | ------------------------- | ------------------------------------------------------------ |
+| 1      | int8      | *Signed 8-bit  integers*  | (-128 to 127)                                                |
+| 2      | int16     | *Signed 16-bit  integers* | (-32768 to 32767)                                            |
+| 3      | int32     | *Signed 32-bit  integers* | (-2147483648 to 2147483647)                                  |
+| 4      | int64     | *Signed 64-bit  integers* | *Signed 64-bit integers :*  (-9223372036854775808  to 9223372036854775807) |
+| 5      | int       | *Platform Dependent*      | *Platform Dependent*                                         |
+
+
+
+---
+
+
+
+### Unsigned Integer
+
