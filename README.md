@@ -22,6 +22,13 @@ Learning Path to Go Language Programming | With Gun Gun Febrianza
       - Example Code
   - What is Strongly Typed Language?
   - What is Dynamically Typed Language?
+  - Go Data Types
+    - Numeric Data Types
+    - 32 Bit & 64 Bit Processor
+    - Signed Integer
+    - Unsigned Integer
+    - Implementation Specific Type
+    - Architecture-dependent Type
 
 
 
@@ -298,6 +305,31 @@ In Signed Integer we can store negative integer values and positive integers. Si
 | 4      | int64     | *Signed 64-bit  integers* | *Signed 64-bit integers :*  (-9223372036854775808  to 9223372036854775807) |
 | 5      | int       | *Platform Dependent*      | *Platform Dependent*                                         |
 
+The term Platform Dependent means that it can be Signed 32 bit integer in 32 bit computer machine architecture and Signed 64 bit integer in 64 bit computer machine architecture.
+
+You will understand more about the meaning of platform dependent on the next page about Architecture-independent Type & Implementation Specific Type.
+
+Below is an example of Signed Integer in Go language :
+
+```go
+func main() {
+    var SignedInteger8 int8 = 127
+    fmt.Println(SignedInteger8) // Output : 127
+
+    var SignedInteger16 int16 = 32767
+    fmt.Println(SignedInteger16) // Ouput : 32767
+
+    var SignedInteger32 int32 = 2147483647
+    fmt.Println(SignedInteger32) // Ouput : 2147483647
+
+    var SignedInteger64 int64 = 9223372036854775807
+    fmt.Println(SignedInteger64) // Ouput : 9223372036854775807
+
+    // fmt.Println(SignedInteger32 + SignedInteger64)
+    // invalid operation: SignedInteger32 + SignedInteger64 (mismatched types int32 and int64)
+}
+```
+
 
 
 ---
@@ -306,3 +338,66 @@ In Signed Integer we can store negative integer values and positive integers. Si
 
 ### Unsigned Integer
 
+Unsigned Integer can only store positive integers.
+
+| **No** | **Types** | **Description**             | **Range**                   |
+| ------ | --------- | --------------------------- | --------------------------- |
+| 1      | uInt8     | *Unsigned 8-bit  integers*  | (0 to 255)                  |
+| 2      | uInt16    | *Unsigned 16-bit  integers* | (0 to 65535)                |
+| 3      | uInt32    | *Unsigned 32-bit  integers* | (0 to 4294967295)           |
+| 4      | uInt64    | *Unsigned 64-bit  integers* | (0 to 18446744073709551615) |
+| 5      | uint      | *Platform Dependent*        | *Platform Dependent*        |
+
+Below is an example of Unsigned Integer in Go language :
+
+```go
+func main() {
+    var unsignedInteger8 uint8 = 255
+    fmt.Println(unsignedInteger8) // Output : 255
+
+    var unsignedInteger16 uint16 = 65535
+    fmt.Println(unsignedInteger16) // Ouput : 65535
+
+    var unsignedInteger32 uint32 = 4294967295
+    fmt.Println(unsignedInteger32) // Ouput : 4294967295
+
+    var unsignedInteger64 uint64 = 18446744073709551615
+    fmt.Println(unsignedInteger64) // Ouput : 18446744073709551615
+
+    // fmt.Println(unsignedInteger16 + unsignedInteger8)
+    // invalid operation: unsignedInteger16 + unsignedInteger8 (mismatched types uint16 and uint8)
+}
+```
+
+Arithmetic operations between numbers with different data types cannot be performed.
+
+There are 2 numeric types in the Go language programming language:
+
+1. Implementation Specific Type
+2. Architecture-dependent Type
+
+
+
+---
+
+
+
+### Implementation Specific Type
+
+The use of int and uint is highly recommended because there are different computer machine architectures (32 & 64 bit).
+
+The use of int and uint keywords will help the compiler to produce code according to the target computer machine architecture. This process is called Implementation Specific Type.
+
+If we make a Go program with the data type int then when compiled with the target architecture 32 bit the size of the data type is also 32 bit, so if we compile on a 64 bit architecture the variable size remains 64 bit.
+
+
+
+---
+
+
+
+### Architecture-dependent Type
+
+In the Architecture-independent type, the data bit size does not change even though the program is executed on any computer machine.
+
+Most of today's computer machine architecture has reached 32 bit and 64 bit. If we write a program and it has an int32 data type, its size will remain constant when we execute it on a 64 bit computer machine architecture.
