@@ -6,6 +6,18 @@ Learning Path to Go Language Programming | With Gun Gun Febrianza
 
 # Table of Contents
 
+
+
+- Go Language
+  - Go is Compiled Language
+    - Static Linking
+    - Go Compiler
+  - Go is Safe Language
+    - Type Checking
+    - Static Typed
+    - Memory Safe
+    - Garbage Collection
+    - Unicode
 - Data Types
   - What is Data?
   - What is Types?
@@ -29,6 +41,83 @@ Learning Path to Go Language Programming | With Gun Gun Febrianza
     - Unsigned Integer
     - Implementation Specific Type
     - Architecture-dependent Type
+
+
+
+---
+
+
+
+# Go Language
+
+Go or Golang is an open source programming language created by Robert Griesemer, Rob Pike and Ken Thompson in 2007 at Google. Robert Griesemer is a Google employee with a deep understanding of Code Generation for the Google V8 Javascript Engine. Ken Thompson is a poet who created the UNIX operating system.
+
+Rob Pike worked with Ken Thompson to develop the UTF-8 encoding scheme. The Go programming language was designed by the best pioneers & innovators in the world of computer science.
+
+It all started in 2007, when Google's Search Engine software crashed. There are millions of lines of code to maintain, every time they add a new feature and test the feature the compilation process has to be done. The compilation process can take hours, which is very bad for developer productivity.
+
+This reason is what inspired them to create programming languages that can be written quickly, compiled quickly and executed quickly. Go lang is the answer to all the problems they face.
+
+*“A language that was fast to write code for and produced programs that were fast to compile and run.”*
+
+In 2009, the Go programming language was made open source so that it could be developed by developers from all over the world.
+
+
+
+---
+
+
+
+## Go is Compiled Language
+
+Go is a high-level programming language that needs to be compiled in order to be understood by machines.
+
+Go is a Compiled Language, meaning Go is a programming language that uses a compiler to perform compilation. Go source code must first be translated into an executable format. Go will produce executable files that can run on windows, linux and mac operating systems.
+
+<img src="assets/Go-Compilation.png" style="zoom:120%;" />
+
+
+
+---
+
+
+
+### Static Linking
+
+Compilation is a process for translating human-readable source code into binary code, a series of instructions that are understood by computers. If you forgot or haven't read it you can read the first chapter 1 about compilers.
+
+The compilation process in the Go programming language will produce binary code in executable format. Executable files are self-contained and can be executed directly without requiring dependencies on certain libraries. Go uses Static Linking so that the generated binary files can be easily transferred to other operating systems.
+
+Once programs built with Go are compiled, developers don't have to worry about libraries and dependencies anymore.
+
+When compilation occurs the compiler can check for errors, perform optimization and produce binary code according to the intended target platform. We can produce executables to run on Windows, Linux and MacOS operating systems.
+
+The Go programming language also supports jargon:
+
+*“write your code once and run it anywhere”*
+
+
+
+---
+
+
+
+### Go Compiler
+
+Most compilers for the Go programming language are written in the Go programming language itself. 
+
+The name of the compiler program for the Go programming language is gc or Go Compiler.
+The program has been inserted into the Go SDK (Software Development Kit).
+
+
+
+---
+
+
+
+## Go is Safe Language
+
+<img src="assets/Go-Safe-Language.png" style="zoom:120%;" />
 
 
 
