@@ -20,6 +20,8 @@ Learning Path to Go Language Programming | With Gun Gun Febrianza
       - Range Value
       - Types
       - Example Code
+  - What is Strongly Typed Language?
+  - What is Dynamically Typed Language?
 
 
 
@@ -205,3 +207,20 @@ func main() {
 
 ---
 
+
+
+## What is Strongly Typed Language?
+
+Go is Statically Typed Language or Static Typing meaning that the value in a variable must have a data type. A programming language is said to be Strongly Typed if a compiler will produce an error if a type is used in the wrong way. 
+
+Strongly Typed offer correctness and safety. The correctness value provides advantages in terms of performance. The safety value provides better data integrity management, better detection of bugs and possible errors at runtime.
+
+
+
+## What is Dynamically Typed Language?
+
+If you have previously studied programming languages such as python and javascript, then you will understand Loosely Typed Language or Dynamic Typing. You can create variables without having to set a data type first, whether it's a literal number, string or Boolean logic.
+
+A language is said to be Dynamically Typed because at runtime, data types can be changed to other data types so that programs can run according to instructions.
+
+Dynamically Typed offer simplicity and speed for software development. In Dynamically Typed software development can be faster, less rigid, easier to make changes.
