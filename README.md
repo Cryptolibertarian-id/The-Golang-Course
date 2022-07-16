@@ -217,6 +217,10 @@ Strongly Typed offer correctness and safety. The correctness value provides adva
 
 
 
+---
+
+
+
 ## What is Dynamically Typed Language?
 
 If you have previously studied programming languages such as python and javascript, then you will understand Loosely Typed Language or Dynamic Typing. You can create variables without having to set a data type first, whether it's a literal number, string or Boolean logic.
@@ -224,3 +228,41 @@ If you have previously studied programming languages such as python and javascri
 A language is said to be Dynamically Typed because at runtime, data types can be changed to other data types so that programs can run according to instructions.
 
 Dynamically Typed offer simplicity and speed for software development. In Dynamically Typed software development can be faster, less rigid, easier to make changes.
+
+
+
+---
+
+
+
+## Go Data Types
+
+<img src="assets/Go-Data-Types.png" style="zoom:110%;" />
+
+In the Go programming language there are 17 Built-in Types that have been provided, including:
+
+1. **Boolean Type** is like **bool**.
+2. **Integer Numeric Types** such as **int8**, **uint8**, **int16**, **uint16**, **int32**, **uint32**, **int64**, **uint64**, **int**, **uint**, and **uintptr**.
+3. **Floating-point Numeric Types such as float32 and float64.**
+4. **Complex Numeric Types** such as **complex64** and **complex128**.
+5. **String Type** is like a **string**.
+
+If we look in detail 15 of the 17 built-in types are numeric types, such as integer types, floating-point types and complex types. 
+
+In addition, the Go programming language also supports built-in aliases, including:
+
+1. **byte** is an alias of **uint8**.
+2. **rune** is an alias of **int32**.
+
+
+
+---
+
+
+
+### Numeric Data Types
+
+The maximum number that can be used in a computer depends on the processor architecture that we use.
+
+
+
