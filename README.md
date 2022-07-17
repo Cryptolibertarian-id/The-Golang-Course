@@ -858,7 +858,7 @@ Most of today's computer machine architecture has reached 32 bit and 64 bit. If 
 
 ### What is Stack & Heap?
 
-When a program is running, data must be stored in a memory, in a running program there are two areas of memory that are used, namely the stack and the heap. 
+When a program is running, data must be stored in a memory, in a running program there are two areas of memory that are used, namely the stack and the heap. Stacks and heaps are just ways of organizing RAM. The RAM itself is just a huge array of bytes.
 
 Stack is an array of memory that has the characteristics of a last-in, first-out (LIFO) data structure. For instance, if a function A() calls a function B(), then A() cannot finish until B() has finished. 
 
@@ -872,7 +872,9 @@ Variables allocated on the stack are stored directly in memory and access to sta
 
 Variables allocated on the heap have memory allocated at run time and access to dynamic memory tends to be slow.
 
-The heap is a more flexible data structure in that memory can be allocated and freed from the heap in any order desired. It is not limited to LIFO. When you need data to exist in a pattern which can't be described by LIFO, you need something like a heap. For instance, if some deeply nested function creates a piece of data and wants to return it to a higher level, this data must come from the heap. If it came from the stack, the data would be destroyed when the function which generated it returns.
+The heap is a more flexible data structure in that memory can be allocated and freed from the heap in any order desired. It is not limited to LIFO. When you need data to exist in a pattern which can't be described by LIFO, you need something like a heap. 
+
+For instance, if some deeply nested function creates a piece of data and wants to return it to a higher level, this data must come from the heap. If it came from the stack, the data would be destroyed when the function which generated it returns.
 
 <img src="assets/Memory-Heap.png" style="zoom:120%;" />
 
