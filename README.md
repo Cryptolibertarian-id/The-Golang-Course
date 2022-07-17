@@ -165,6 +165,52 @@ Programs can only have access to authorized memory locations. Protect developers
 
 
 
+### Garbage Collection 
+
+Go is a programming language that supports Automatic Memory Management so we don't have to think about memory allocation and deallocation problems. Garbage Collection is a feature that ensures that unused references that are no longer in use are deleted and cleaned in memory.
+
+
+
+---
+
+
+
+### Unicode
+
+Go is a programming language that supports Unicode so that it can print all human language systems around the world.
+
+In programming languages that support dynamically typed languages such as javascript, python, php and ruby, they argue that development productivity will increase if we don't have to worry and focus on types and memory.
+
+However, there are trade-offs in these advantages, namely the downside in terms of performance, memory efficiency and bugs around type-mismatch.
+
+Go declares itself to be able to provide the same productivity as a programming language that supports dynamically typed languages, but does not sell in terms of performance and efficiency.
+
+
+
+---
+
+
+
+## Go is Multicore Programming
+
+There is an interesting fact, all the current popular programming languages are not designed to be able to take advantage of multiple CPU Cores (Multicore).
+
+The Go programming language has been designed by legends like Robert, Rob and Ken so that we can write parallel and concurrent code safely. So that we can take advantage of modern multicore CPUs and Cloud Computing.
+
+The transformation of computer performance continues to change, with the current status quo of the computer world. Today discuss about speed means how we can take advantage of the concept of parallel or concurrency. How come?
+
+Below is the author's opinion, there are several factors why multi-core programming will bring programming standards and trends in the future:
+
+1. According to Moore's Law, every 18 months the total transistors in the Central Processing Unit (CPU) doubles. The Central Processing Unit (CPU) is able to accommodate more transistors and their size is getting smaller.
+2. Every 18 months the speed of the Central Processing Unit (CPU) continues to double, starting from 1950.
+3. However, after more than 50 years, in 2002 there was a limitation in the circuit design of the Central Processing Unit (CPU), demanding a new architecture.
+4. The solution to the problem above is a multi-core processor, after 2002 in one chip there can be 2 cores, 4 cores, 8 cores more processors.
+5. However, each core does not experience an increase in speed, only the number of cores increases. Moore's law is still running, no longer by adding transistors in the Central Processing Unit (CPU) but adding cores in a single chip.
+6. Chip manufacturers are starting to stop adding transistors, the trend is starting to focus on adding cores and caches. However, increasing the number of cores is also limited by economic costs.
+7. Increasing the amount of cache will also eventually find a limit, the bigger the cache, the slower it gets.
+8. From the problems above, it is clear that we can no longer rely on hardware improvement innovations but how to build efficient software development.
+9. Based on the current status quo of the chip industry, software engineers must utilize multicore processors with the concept of concurrency to maximize hardware capabilities.
+
 
 
 ---
