@@ -18,6 +18,36 @@ Learning Path to Go Language Programming | With Gun Gun Febrianza
     - Memory Safe
     - Garbage Collection
     - Unicode
+  - Go is Multicore Programming
+- Go Program
+  - Basic Structure
+  - Comment
+  - Expression & Operator
+    - Statement
+    - Expression
+    - Operator Precedence
+    - Block of Code
+    - Operator & Operand
+    - Arithmetic Operator
+    - Arithmetic Operation
+    - Comparison Operator
+    - Logical Operator
+    - Assignment Operator
+  - String Literal
+  - Rune Literal
+  - Numbers Literal
+  - Boolean Literal
+  - Import Package
+  - Variable Declaration
+    - Variable
+    - Binding
+    - Reserved Words
+    - Naming Convention
+    - Case Sensitivity
+    - Var Keyword
+    - Zero Value
+    - Short-Variable Declaration
+    - Multiple-Variable Declaration
 - Data Types
   - What is Data?
   - What is Types?
@@ -217,7 +247,74 @@ Below is the author's opinion, there are several factors why multi-core programm
 
 
 
+# Go Program
+
+*The goals of the Go project were to eliminate*  *the slowness and clumsiness of software development* *at Google.*
+
+
+
+## Basic Structure
+
+Below is the most basic structure of the Go program, there are 3 main components namely Package Name, Imported Package and Entry point:
+
+<img src="assets/Go-Structure.png" style="zoom:120%;" />
+
+```go
+package main
+
+import (
+    "fmt"
+)
+
+//entrypoint
+func main() {
+    fmt.Println("Hello World!")
+}
+```
+
+
+
+### Package Name
+
+Every program written using Go must have a package keyword. The entire code above is part of the main package. We use a special package called main, a package that is required for the program to run when executed.
+
+
+
+---
+
+
+
+### Imported Package
+
+Next there is a statement that contains the import keyword, this keyword is used when we want to use a built-in package that has been provided by Go.
+
+In the source code above we use the fmt package.
+
+The usefulness of the fmt package is that we can interact with input and output, in the source code above we use the Println function of the fmt package to display text in standard output.
+
+
+
+---
+
+
+
+### Entry Point
+
+In the next code above we have the **main() function** which acts as an entry point where the code will be read for the first time when the program is executed.
+
+
+
+---
+
+
+
 # Data Types
+
+*Without data, you're just another person with an opinion.*
+
+*— W. Edward Deming* 
+
+
 
 To understand the concept of Data Types in Go, there are some fundamental concepts that we must learn in an organized and systematic way.
 
@@ -582,3 +679,8 @@ If we make a Go program with the data type int then when compiled with the targe
 In the Architecture-independent type, the data bit size does not change even though the program is executed on any computer machine.
 
 Most of today's computer machine architecture has reached 32 bit and 64 bit. If we write a program and it has an int32 data type, its size will remain constant when we execute it on a 64 bit computer machine architecture.
+
+
+
+---
+
