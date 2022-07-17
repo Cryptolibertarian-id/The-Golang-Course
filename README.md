@@ -75,11 +75,18 @@ Learning Path to Go Language Programming | With Gun Gun Febrianza
   - What is Dynamically Typed Language?
   - Go Data Types
     - Numeric Data Types
-    - 32 Bit & 64 Bit Processor
-    - Signed Integer
-    - Unsigned Integer
-    - Implementation Specific Type
-    - Architecture-dependent Type
+      - 32 Bit & 64 Bit Processor
+      - Signed Integer
+      - Unsigned Integer
+      - Implementation Specific Type
+      - Architecture-dependent Type
+      - Formatting
+      - Real Number & Number Theory
+      - Floating-point
+    - String Data Types
+    - Boolean Data Types
+    - Check Data Types
+    - What is Stack & Heap?
 
 
 
@@ -430,17 +437,17 @@ Below are the arithmetic operators in Go. Not just addition, subtraction, multip
 
 Go provides operators for remainder, unary, pre & post increment and pre & post decrement :
 
-| **Operator** | **Description**                             | **Example**      |
-| ------------ | ------------------------------------------- | ---------------- |
-| +            | *Addition (String Concat)* atau penjumlahan | 2+1 //3          |
-| -            | *Subtraction* atau pengurangan              | 2-1 //1          |
-| /            | *Division* atau pembagian                   | 6/2 //3          |
-| *            | *Multiplication* atau perkalian             | 3*2 //6          |
-| %            | *Remainder*                                 | 3%2 //1          |
-| -            | *Unary Negation*                            | -x // negative x |
-| +            | *Unary Plus*                                | +x // positive x |
-| ++           | *Post-Increment*                            | X++              |
-| --           | *Post-Decrement*                            | x--              |
+| **Operator** | **Description**            | **Example**      |
+| ------------ | -------------------------- | ---------------- |
+| +            | *Addition (String Concat)* | 2+1 //3          |
+| -            | *Subtraction*              | 2-1 //1          |
+| /            | *Division*                 | 6/2 //3          |
+| *            | *Multiplication*           | 3*2 //6          |
+| %            | *Remainder*                | 3%2 //1          |
+| -            | *Unary Negation*           | -x // negative x |
+| +            | *Unary Plus*               | +x // positive x |
+| ++           | *Post-Increment*           | X++              |
+| --           | *Post-Decrement*           | x--              |
 
 
 
@@ -847,3 +854,20 @@ Most of today's computer machine architecture has reached 32 bit and 64 bit. If 
 
 ---
 
+
+
+### What is Stack & Heap?
+
+When a program is running, data must be stored in a memory, in a running program there are two areas of memory that are used, namely the stack and the heap. 
+
+Stack is an array of memory that has the characteristics of a last-in, first-out (LIFO) data structure.
+
+<img src="assets/Stack-Illustration.png" style="zoom:120%;" />
+
+Stack is used to make Static Memory allocation and Heap is used to create Dynamic Memory, both of which are stored in RAM (Random Access Memory).
+
+Variables allocated on the stack are stored directly in memory and access to static memory is very fast. Variables allocated on the heap have memory allocated at run time and access to dynamic memory tends to be slow.
+
+<img src="assets/Memory-Heap.png" style="zoom:120%;" />
+
+In the illustration in Figure 1 there are three objects in the heap, in Figure 2 one of the objects in the heap is no longer used, in Figure 3 the garbage collector finds that there are objects that are no longer used and in Figure 4 the objects on the heap have been cleaned by the Garbage Collector.
