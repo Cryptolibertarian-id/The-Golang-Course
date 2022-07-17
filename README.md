@@ -8,6 +8,8 @@ Learning Path to Go Language Programming | With Gun Gun Febrianza
 
 
 
+- Computer & Programming
+- Compiler & Interpreter
 - Go Language
   - Go is Compiled Language
     - Static Linking
@@ -91,6 +93,61 @@ Learning Path to Go Language Programming | With Gun Gun Febrianza
 
 
 ---
+
+
+
+# Computer & Programming
+
+Computers can perform calculations and logical decisions at a very high speed beyond human capabilities. The average Personal Computer (PC) today can execute billions of instructions every second, but Supercomputers can execute up to Quadrillion instructions per second or the equivalent of thousands of trillions per second. Very astonishing.
+
+One supercomputer named Tianhe-2, developed by the National University of Defense Technology, is capable of performing 33 Quadrillion calculations per second. Approximately, (33.86 Petaflops).
+
+However, the supercomputer development competition was won again by the United States after they made the latest supercomputer with the name Summit (OLCF-4) which has the capability of up to 200 flops.
+
+Flops or floating point operations per second is one measure used to determine the performance of a computer. Used to carry out scientific computations that can unlock hundreds of millions of dollars in business potential, innovations and industrial revolutions that can bring a company or country to open a new history.
+
+
+
+---
+
+
+
+## Computer Program
+
+The computer processes a program consisting of a series of instructions to perform a specific computation. The word specific refers to a problem domain or programming domain.
+
+According to Robert W. Semesta in his book entitled Concept of Programming Language (2016) a programming domain consists of 4 things, namely:
+
+1. Scientific Application
+   Programs created for scientific and research purposes.
+2. Business Application
+     Programs created for business purposes.
+3. Artificial Intelligence
+     The program created has artificial intelligence capabilities.
+4. Web Software
+    Programs created using web technology.
+
+
+
+---
+
+
+
+## Computation
+
+The terminology of computing can be in the form of numeric computations such as solving something with a mathematical model such as the system of equations or symbolic computations such as searching for text, manipulating text, images and videos.
+
+
+
+---
+
+
+
+
+
+# Compiler & Interpreter
+
+
 
 
 
