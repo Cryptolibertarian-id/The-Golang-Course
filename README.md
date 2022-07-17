@@ -19,8 +19,17 @@ Learning Path to Go Language Programming | With Gun Gun Febrianza
     - Garbage Collection
     - Unicode
   - Go is Multicore Programming
+- Setup Go Lang
+  - Configure Go PATH
+  - Go Compilation
+  - Go Execution
+  - Go Documentation
+  - Go Playground
 - Go Program
   - Basic Structure
+    - Package Name
+    - Imported Package 
+    - Entry point
   - Comment
   - Expression & Operator
     - Statement
@@ -244,6 +253,109 @@ Below is the author's opinion, there are several factors why multi-core programm
 
 
 ---
+
+
+
+# Setup Go Lang
+
+Before we start the practice of writing code using the Go language, we must first understand what GOPATH is. The GOPATH configuration needs to be made first so that we have a Workspace.
+
+Go Workspace is where Go manages source files, compiled binaries and cached objects for faster compilation.
+
+
+
+## Go Compilation
+
+It has become a tradition that if we are acquainted with a programming language we will make the simplest program, namely Hello World.
+
+We will learn to compile a Go program to display the hello world message, to start it in the src folder create a folder called 1.Intro. Then create a file called helloworld.go, then write the code below:
+
+```go
+package main
+
+import (
+    "fmt"
+)
+
+func main() {
+    fmt.Println("Hello World!")
+}
+```
+
+To compile, please execute the command below:
+
+```bash
+ $ go build helloworld.go
+```
+
+If successful then in the same directory will appear a binary file named helloworld.exe
+
+To get more detailed information, execute the command below:
+
+```bash
+$ file helloworld
+helloworld: PE32+ executable (console) x86-64 (stripped to external PDB), for MS Windows
+```
+
+Next we can execute the executable file that has been created:
+
+```bash
+$ helloworld
+Hello World!
+```
+
+If we look, the size of the executable becomes larger. This is because the executable already supports statically linked characteristics, which means that it does not require external libraries to run.
+
+<img src="assets/Compilation-Output.png" style="zoom:120%;" />
+
+
+
+---
+
+
+
+## Go Execution
+
+Apart from compiling there are other ways to execute programs written in Go without having to produce executables. To do this, execute the command below:
+
+```bash
+$ go run helloworld.go
+Hello World!
+```
+
+
+
+---
+
+
+
+## Go Documentation
+
+Go provides a program called go doc to make it easier for us to get a documentation without having to connect to the internet.
+
+For example, if we want to display information about the Printf() function from the fmt package, execute the command below:
+
+```bash
+$ go doc fmt Printf
+```
+
+
+
+---
+
+
+
+## Go Playground
+
+Apart from writing code using our preferred Editor, Go also provides an online version of the editor to test the golang code that we write in:
+
+https://play.golang.org/
+
+<img src="assets/Go-Playground.png" style="zoom:120%;" />
+
+
+
+----
 
 
 
