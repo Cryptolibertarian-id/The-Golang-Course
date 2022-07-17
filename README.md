@@ -121,6 +121,52 @@ The program has been inserted into the Go SDK (Software Development Kit).
 
 
 
+### Type Checking
+
+Every time we create a variable we must first determine the data type to be used. This protects developers from a bunch of common bugs and security flaws in the code we write.
+
+
+
+---
+
+
+
+### Static Typed
+
+Go is a programming language that has the characteristics of statically typed, means a variable created with a certain data type cannot be used on other data types. Look at the code below:
+
+```go
+var int data;
+data = 50;
+data = “Hello World!”; // compilation error
+```
+
+The advantage of static typing is that the compilation results produce code that can be executed quickly, because the compiler knows what data types are used so that it is able to produce optimized machine code.
+
+Optimization provides added value such as speed and lighter memory usage in the application software produced.
+
+
+
+---
+
+
+
+### Memory Safe
+
+Go ensures memory safety so that the programs we write can avoid bugs and security vulnerabilities, when the programs we write interact with memory access.
+
+All of this is possible because Go has a check bound access feature that prevents incorrect memory access.
+
+Programs can only have access to authorized memory locations. Protect developers from security flaws so that software development becomes more secure.
+
+
+
+---
+
+
+
+
+
 ---
 
 
