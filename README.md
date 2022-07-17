@@ -285,7 +285,7 @@ func main() {
 To compile, please execute the command below:
 
 ```bash
- $ go build helloworld.go
+$ go build helloworld.go
 ```
 
 If successful then in the same directory will appear a binary file named helloworld.exe
@@ -413,6 +413,57 @@ The usefulness of the fmt package is that we can interact with input and output,
 ### Entry Point
 
 In the next code above we have the **main() function** which acts as an entry point where the code will be read for the first time when the program is executed.
+
+
+
+---
+
+
+
+## Expression & Operator
+
+
+
+### Arithmetic Operator
+
+Below are the arithmetic operators in Go. Not just addition, subtraction, multiplication and division. 
+
+Go provides operators for remainder, unary, pre & post increment and pre & post decrement :
+
+| **Operator** | **Description**                             | **Example**      |
+| ------------ | ------------------------------------------- | ---------------- |
+| +            | *Addition (String Concat)* atau penjumlahan | 2+1 //3          |
+| -            | *Subtraction* atau pengurangan              | 2-1 //1          |
+| /            | *Division* atau pembagian                   | 6/2 //3          |
+| *            | *Multiplication* atau perkalian             | 3*2 //6          |
+| %            | *Remainder*                                 | 3%2 //1          |
+| -            | *Unary Negation*                            | -x // negative x |
+| +            | *Unary Plus*                                | +x // positive x |
+| ++           | *Post-Increment*                            | X++              |
+| --           | *Post-Decrement*                            | x--              |
+
+
+
+---
+
+
+
+### Arithmetic Operation
+
+Examples of arithmetic operations in Go:
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    a := 3
+    var result int
+    result = (100 + 50) * a
+    fmt.Println(result) //450
+}
+```
 
 
 
