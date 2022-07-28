@@ -4,12 +4,46 @@ Learning Path to Go Language Programming | With Gun Gun Febrianza
 
 
 
+**This Markdown written with Typora editor**
+
+There is a convention :
+
+- 2^8^ meaning 2 exponent 8
+
+
+
 # Table of Contents
 
 
 
 - Computer & Programming
+  - Computer Program
+  - Computation
+  - Computer System
+  - Data Hierarchy
+  - Operating System
+  - Programming Language
+  - Programming Language Abstraction
+  - Programming Paradigm
 - Compiler & Interpreter
+  - Compiler
+  - Interpreter
+  - Compilation Process
+    - Source Code
+    - Lexical Analyzer
+    - Syntax Analyzer
+    - Symbol Table
+    - Intermediate Code Generator
+    - Bytecode
+    - Semantic Analyzer
+    - Optimization
+    - Code Generator
+  - Runtime Infrastructure
+    - JVM & CLR
+    - Two-stage Translation
+    - Object Code
+    - Linker
+    - Loader
 - Go Language
   - Go is Compiled Language
     - Static Linking
@@ -93,6 +127,28 @@ Learning Path to Go Language Programming | With Gun Gun Febrianza
 
 
 ---
+
+# Header
+
+Last touched on 28 July 2022
+
+| Parameter | Value | Note |
+| --------- | ----- | ---- |
+|           |       |      |
+|           |       |      |
+|           |       |      |
+
+
+
+## Resources
+
+- [Golang for Node.js Developer](https://github.com/miguelmota/golang-for-nodejs-developers) by Miguel Mota
+
+
+
+---
+
+
 
 
 
@@ -784,9 +840,9 @@ The maximum number that can be used in a computer depends on the processor archi
 
 ### 32 Bit & 64 Bit Processor 
 
-The word 32 and 64 Bit refers to the architecture of the processor, 32 and 64 bit to distinguish the processor's ability to access memory through the CPU Register. At 32 bit the ability to access the memory address reaches 2^32.
+The word 32 and 64 Bit refers to the architecture of the processor, 32 and 64 bit to distinguish the processor's ability to access memory through the CPU Register. At 32 bit the ability to access the memory address reaches 2^32^.
 
-At 64 bits the ability to access memory addresses reaches 2^64.
+At 64 bits the ability to access memory addresses reaches 2^64^.
 
 On a 32-bit processor the processing ability to interact with RAM is limited to 4 GB, while on a 64-bit processor the processing ability to interact with RAM can be more than 4GB.
 
